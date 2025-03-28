@@ -982,6 +982,8 @@ namespace ToolCore.Comp
                 ShowInToolbarSwitch.Setter(BlockTool, !originalSetting);
                 ShowInToolbarSwitch.Setter(BlockTool, originalSetting);
             }
+            // A toggle to refresh the block controls so UseWorkColor is refreshed automaticly. 
+            BlockTool.ShowInToolbarConfig = !BlockTool.ShowInToolbarConfig;
         }
 
         private void StorageInit()
