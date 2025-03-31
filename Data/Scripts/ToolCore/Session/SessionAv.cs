@@ -318,9 +318,8 @@ namespace ToolCore.Session
                 if (soundPair == null)
                     return;
 
-                // ✅ Attach sound to the entity so ALL clients hear it
-                emitter.Entity = comp.ToolEntity;  // 👈 Attach sound to the block entity
-                emitter.PlaySound(soundPair, force3D: true);
+                emitter.PlaySound(soundPair);
+                //Logs.WriteLine($"Playing sound {sound.Name}");
             }
 
         }
