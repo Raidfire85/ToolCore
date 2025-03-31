@@ -318,7 +318,7 @@ namespace ToolCore.Session
                 if (soundPair == null)
                     return;
 
-                emitter.PlaySound(soundPair);
+                emitter.PlaySound(soundPair, force3D: true);
                 //Logs.WriteLine($"Playing sound {sound.Name}");
             }
 
